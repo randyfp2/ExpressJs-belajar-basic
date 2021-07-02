@@ -7,7 +7,12 @@
     <title>Express Basic</title>
 </head>
 <body>
-    <p>Nama saya Randy</p>
-    <p>Umur saya 23</p>
+    <p>Nama saya <%= nama %></p>
+    <p>Umur saya <%= umur %></p>
+    <% for(let i=0,j=1; i < hp.length; i++,j++){ %>
+        <p>Handphone ke-<%= j %> saya <%= hp[i].hpnama %></p>
+    
+
+        <%  } %>
 </body>
 </html>
